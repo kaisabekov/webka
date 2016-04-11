@@ -51,9 +51,9 @@
 <br><br><br>
 <center id="contact">
 <span>Location and Contact Information</span><br>
-<span>Address:</span> Avenue Louise 480 | IT Tower 25eme Etage, Brussels 1050, Belgium <br>
-<span>Location:</span> Europe  >  Belgium  >  Brussels <br>
-<span>Phone Number:</span> +32 2 644 69 14
+<span>Address:</span> Kazakhstan, AO, Qaskeleng, Abylay khana 1 <br>
+<span>Location:</span> Asia  >  Kazakhstan  >  Qaskeleng <br>
+<span>Phone Number:</span> +7 708 908 96 08
 </center>
 
 </form>
