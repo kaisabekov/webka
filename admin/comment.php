@@ -10,7 +10,7 @@ session_start();
 
 $servername = "localhost";
 $username = "root";
-$password = "kiit";
+$password = "";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password);
@@ -18,7 +18,7 @@ $conn = new mysqli($servername, $username, $password);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
-} 
+}
 mysqli_select_db($conn,"hotel");
 
 echo "<center><p >COMMENTS DETAILS</p></center><br>";
@@ -71,4 +71,3 @@ echo "<p><center><button><A HREF=logout.php? class=book>&nbsp &nbsp Log Out &nbs
 
 </body>
 </html>
-

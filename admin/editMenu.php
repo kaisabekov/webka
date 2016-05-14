@@ -10,7 +10,7 @@ session_start();
 
 $servername = "localhost";
 $username = "root";
-$password = "kiit";
+$password = "";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password);
@@ -18,7 +18,7 @@ $conn = new mysqli($servername, $username, $password);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
-} 
+}
 mysqli_select_db($conn,"hotel");
 
 $code2=$_GET['code1'];
@@ -66,7 +66,7 @@ $res=mysqli_query($conn,"select * from menu1 where code='$code2'");
 			<TR>
 				<TD>Price</TD>
 				<TD><INPUT NAME="price" VALUE = "<?php print $row['price'];?>"></TD>
-			</TR>	
+			</TR>
 			<TD><button><A HREF=menu.php? class=book>&nbsp &nbsp Back &nbsp&nbsp</A></button></TD>
 			<TD><INPUT TYPE ="submit" VALUE = "Update"></TD>
 			</TR>
