@@ -1,4 +1,4 @@
-<html>
+<Doctype html>
 <style>
 	a.book{
 		text-decoration: none;
@@ -27,7 +27,7 @@ while ($row = mysqli_fetch_array($res))
 	}
 }
 if(isset($_POST['insert']))
-{	
+{
 	$fname=$_POST['name'];
 	$email=$_POST['email'];
 	$person=$_POST['persons'];
@@ -35,7 +35,7 @@ if(isset($_POST['insert']))
 	$time=$_POST['time'];
 	$status="Pending";
 	$sql=mysqli_query($conn,"INSERT INTO tablebooking(id,name,email,persons,date1,time,status) VALUES('$id','$fname','$email','$person','$date','$time','$status')");
-	
+
 }
 
 ?>
