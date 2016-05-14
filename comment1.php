@@ -1,8 +1,8 @@
-<html>
+<Doctype html>
 <head>
   <style>
     td{
-    	font-size:22px;
+    	font-size:21px;
     	font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
     }
     input{font-size:17px;}
@@ -59,10 +59,10 @@ while ($row = mysqli_fetch_array($res))
   $id=$row['id'];
   $name=$row['name'];
   $comment=$row['comment'];
-  $total="  
-  <div> 
-   <span id=name>$name</span>"." with Booking Id= "."<span id=id>$id</span>"." 
-   &nbsp Commented -->"."<span id=name> $comment</span>   
+  $total="
+  <div>
+   <span id=name>$name</span>"." with Booking Id= "."<span id=id>$id</span>"."
+   &nbsp Commented -->"."<span id=name> $comment</span>
   </div>  ";
   print $total;
   print "<br>";
