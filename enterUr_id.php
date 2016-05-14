@@ -15,7 +15,7 @@
 <CENTER style="position:relative;top:150px;">
 
   <FORM METHOD=POST ACTION="status.php" >
-    
+
     <TABLE>
       <TR>
         <TD style="font-size:22px;">Enter Your ID &nbsp &nbsp &nbsp</TD>
