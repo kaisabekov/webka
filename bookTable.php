@@ -9,7 +9,7 @@
 <body>
 <center> <font color="brown" size="5">BOOK Your Table So That We Can Serve You Better</font></center>
 <br><br>
-
+<-- -->
 <CENTER >
   <FORM METHOD=POST ACTION="bookTable1.php" >
     <INPUT TYPE ="HIDDEN" NAME="edit" VALUE = "<?php print $_GET['id'];?>">
