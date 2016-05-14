@@ -1,5 +1,5 @@
 <?php
-
+ 
 	if(!isset($_SESSION['user']))
 	{
    		if($_GET['msg'] == "1")
