@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.1.4
+-- version 4.5.1
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 24, 2015 at 05:57 PM
--- Server version: 5.6.15-log
--- PHP Version: 5.5.8
+-- Generation Time: May 14, 2016 at 04:50 PM
+-- Server version: 10.1.13-MariaDB
+-- PHP Version: 5.6.20
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -14,7 +14,7 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Database: `hotel`
@@ -26,13 +26,12 @@ SET time_zone = "+00:00";
 -- Table structure for table `menu1`
 --
 
-CREATE TABLE IF NOT EXISTS `menu1` (
+CREATE TABLE `menu1` (
   `id` int(3) NOT NULL,
   `code` varchar(15) NOT NULL,
   `item` varchar(100) NOT NULL,
   `category` varchar(100) NOT NULL,
-  `price` decimal(6,2) NOT NULL,
-  PRIMARY KEY (`item`)
+  `price` decimal(6,2) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
@@ -157,60 +156,15 @@ INSERT INTO `menu1` (`id`, `code`, `item`, `category`, `price`) VALUES
 -- Table structure for table `tablebooking`
 --
 
-CREATE TABLE IF NOT EXISTS `tablebooking` (
+CREATE TABLE `tablebooking` (
   `id` varchar(20) NOT NULL,
   `name` varchar(20) NOT NULL,
   `email` varchar(30) NOT NULL,
   `persons` int(2) NOT NULL,
   `date1` date NOT NULL,
   `time` varchar(15) NOT NULL,
-  `status` varchar(20) NOT NULL,
-  PRIMARY KEY (`id`)
+  `status` varchar(20) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `tablebooking`
---
-
-INSERT INTO `tablebooking` (`id`, `name`, `email`, `persons`, `date1`, `time`, `status`) VALUES
-('802838836', 'ANUP', 'anup@gmail.com', 7, '2015-06-10', '14:22', 'CONFIRM'),
-('640484902', 'anurag', 'anuragyadavkool@gmail.com', 50, '2015-06-25', '17:05', 'CONFIRM'),
-('1976800393', 'pratyush', 'p@gmail.com', 4, '2015-07-16', '15:30', 'CONFIRM'),
-('379263928', 'RAVI', 'r@gmail.com', 5, '2015-07-16', '14:30', 'CONFIRM'),
-('676083211', 'yuvraz', 'y@gmail.com', 5, '2015-07-16', '14:30', 'Pending'),
-('1054929355', 'RS yadav', 'rs@gmail.com', 5, '2031-06-12', '12:30', 'CONFIRM'),
-('1954892854', 'AGNISH', 'A@gmail.com', 5, '2015-07-10', '13:30', 'CONFIRM'),
-('21729431', 'anurag', 'anuragyadavkool@gmail.com', 3, '2015-06-09', '15:03', 'CANCELLED'),
-('1282840363', 'anurag', 'anuragyadavkool@gmail.com', 3, '2015-06-12', '15:03', ''),
-('1337596065', 'R S yadav', 'anuragyadavkool@gmail.com', 1, '2015-06-03', '02:22', 'CONFIRM'),
-('1263549797', 'anurag', 'anuragyadavkool@gmail.com', 3, '2015-06-04', '15:33', ''),
-('1174726892', 'vikas', 'vvknid@gmail.com', 50, '2017-06-15', '14:02', ''),
-('138511089', 'anurag', 'anuragyadavkool@gmail.com', 4, '2015-06-17', '16:04', ''),
-('1858941227', 'anurag', 'anuragyadavkool@gmail.com', 4, '2015-06-03', '15:03', 'CANCELLED'),
-('369725970', 'Sid', 'sid@gmail.com', 2, '2015-07-24', '14:22', 'Pending'),
-('299270769', 'SHREYA', 'S@gmail.com', 7, '2023-06-15', '14:30', 'CONFIRM'),
-('1118026920', 'AAyush', 'DNS@gmail.com', 7, '2015-06-11', '02:02', 'Pending'),
-('1193902504', 'anurag', 'anuragyadavkool@gmail.com', 3, '2015-06-12', '15:33', ''),
-('1889093527', 'anurag', 'anuragyadavkool@gmail.com', 3, '2015-06-03', '03:03', ''),
-('11804189', 'RAMA Shankar yadav', 'rsy@gmail.com', 5, '2015-06-26', '15:03', ''),
-('1379865401', 'asdas', 'asdasd@gmail.com', 5, '2015-06-18', '14:02', ''),
-('936286637', 'anup', 'anup@gmail.com', 30, '2015-06-26', '14:02', 'CONFIRM'),
-('410035938', 'Anurag Yadav', 'anuragyadavkiit@gmail.com', 5, '2015-07-04', '14:30', 'Pending'),
-('632533595', 'Asha', 'asha@gmail.com', 20, '2015-06-25', '01:01', 'Pending'),
-('260303864', 'sasa', 'anuragyadavkool@gmail.com', 2, '2015-06-10', '14:02', 'Pending'),
-('121917073', 'anurag', 'anuragyadavkool@gmail.com', 2, '2015-06-17', '15:30', 'Pending'),
-('546174322', 'anurag', 'anuragyadavkool@gmail.com', 2, '2015-06-28', '10:30', 'Pending'),
-('1780719401', 'yuvraj', 'yv@gmail.com', 3, '2015-06-19', '01:01', 'CONFIRM'),
-('428583419', 'anurag', 'anuragyadavkool@gmail.com', 3, '2015-06-10', '15:03', 'Pending'),
-('906019886', 'Karan', 'karan@gmail.com', 5, '2015-06-19', '01:01', 'CONFIRM'),
-('1668630748', 'Kriti', 'something@gmail.com', 5, '2015-06-18', '15:30', 'Pending'),
-('1031304281', 'GEMINI', 'g@gmail.com', 5, '2015-07-22', '14:30', 'Pending'),
-('279130306', 'Kashis', 'gemini@gmail.com', 5, '2015-07-16', '14:30', 'CONFIRM'),
-('1782056481', 'Chandim', 'c@gmail.com', 6, '2015-07-17', '14:01', 'CONFIRM'),
-('1743174819', 'xyz', 'x@mail.com', 5, '2015-07-17', '03:00', 'CONFIRM'),
-('248745563', 'Jadu', 'j@gmail.com', 5, '2015-07-24', '14:30', 'CONFIRM'),
-('493557611', 'INDER', 'i@gmail.com', 5, '2015-07-16', '15:30', 'CONFIRM'),
-('418269063', 'Karan', 'k@gmail.com', 7, '2015-07-17', '15:00', 'CONFIRM');
 
 -- --------------------------------------------------------
 
@@ -218,25 +172,33 @@ INSERT INTO `tablebooking` (`id`, `name`, `email`, `persons`, `date1`, `time`, `
 -- Table structure for table `visitorcomment`
 --
 
-CREATE TABLE IF NOT EXISTS `visitorcomment` (
+CREATE TABLE `visitorcomment` (
   `id` int(20) NOT NULL,
   `name` varchar(20) NOT NULL,
-  `comment` text NOT NULL,
-  PRIMARY KEY (`id`)
+  `comment` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `visitorcomment`
+-- Indexes for dumped tables
 --
 
-INSERT INTO `visitorcomment` (`id`, `name`, `comment`) VALUES
-(1954892854, 'AGNISH', 'Will visit again....'),
-(369725970, 'Sid', 'its very good'),
-(248745563, 'Jadu', 'its good'),
-(906019886, 'Karan', 'surely i will visit again...'),
-(676083211, 'yuvraz', 'its vey bauuu....'),
-(279130306, 'Kashis', 'food is good\r\n'),
-(1782056481, 'Chandim', 'its very good');
+--
+-- Indexes for table `menu1`
+--
+ALTER TABLE `menu1`
+  ADD PRIMARY KEY (`item`);
+
+--
+-- Indexes for table `tablebooking`
+--
+ALTER TABLE `tablebooking`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `visitorcomment`
+--
+ALTER TABLE `visitorcomment`
+  ADD PRIMARY KEY (`id`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
