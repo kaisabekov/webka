@@ -39,9 +39,6 @@ while ($row = mysqli_fetch_array($res))
 print "</TABLE>";
 ?>
 <center>
-<footer style="background-color:#C299FF;">
-Copyright © 2015 Anurag Yadav All Rights Reserved
-</footer> 
 </center>
 
 </body>
