@@ -30,7 +30,7 @@ if($noID)
 <head>
 	<style>
 	p{
-		font-size:22px;
+		font-size:21px;
 		font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
 		position:relative;
 		top:120px;
