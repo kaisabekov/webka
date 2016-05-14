@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	if(!$_SESSION['user'])
-	{
+	{ 
 		Header("Location: index.php?msg=2");
 	}
 ?>
@@ -35,7 +35,7 @@
 		<table>
 			<tr rowspan="2">
 				<td>
-					
+
 				</td>
 			</tr>
 			<tr><td></td></tr>
@@ -66,11 +66,10 @@
 			</tr>
 			<tr><td>.....................................................................
 					....................................................................</td></tr>
-			</center>	
-		</table>	
-	</center>	
+			</center>
+		</table>
+	</center>
 	<center><button><A HREF=logout.php? class=book>&nbsp &nbsp Log Out &nbsp&nbsp</A></button></center>
 
 </body>
 </html>
-
