@@ -1,4 +1,4 @@
-<html>
+<Doctype html>
 <head>
 	<style>
 		td{
@@ -56,7 +56,7 @@ while ($row = mysqli_fetch_array($res))
 		</TD>
 	</TR>
 	<TR >
-		
+
 	</TR>
 	<TR>
 		<TD>ID</TD>
